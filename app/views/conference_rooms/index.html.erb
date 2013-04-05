@@ -1,0 +1,39 @@
+<h1>Listing conference_rooms</h1>
+
+<table>
+  <tr>
+    <th>Building</th>
+    <th>Name</th>
+    <th>Room</th>
+    <th>Floor</th>
+    <th>Phone</th>
+    <th>Max</th>
+    <th>Tv</th>
+    <th>Vtc</th>
+    <th>Whiteboard</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @conference_rooms.each do |conference_room| %>
+  <tr>
+    <td><%= conference_room.building_id %></td>
+    <td><%= conference_room.name %></td>
+    <td><%= conference_room.room %></td>
+    <td><%= conference_room.floor %></td>
+    <td><%= conference_room.phone %></td>
+    <td><%= conference_room.max %></td>
+    <td><%= conference_room.tv %></td>
+    <td><%= conference_room.vtc %></td>
+    <td><%= conference_room.whiteboard %></td>
+    <td><%= link_to 'Show', conference_room %></td>
+    <td><%= link_to 'Edit', edit_conference_room_path(conference_room) %></td>
+    <td><%= link_to 'Destroy', conference_room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Conference room', new_conference_room_path %>

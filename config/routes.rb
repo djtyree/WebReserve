@@ -1,4 +1,13 @@
 WebReserve::Application.routes.draw do
+  resources :conference_rooms
+
+
+  resources :coference_rooms
+
+
+  resources :buildings
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Building:</b>
+  <%= @conference_room.building_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @conference_room.name %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%= @conference_room.room %>
+</p>
+
+<p>
+  <b>Floor:</b>
+  <%= @conference_room.floor %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @conference_room.phone %>
+</p>
+
+<p>
+  <b>Max:</b>
+  <%= @conference_room.max %>
+</p>
+
+<p>
+  <b>Tv:</b>
+  <%= @conference_room.tv %>
+</p>
+
+<p>
+  <b>Vtc:</b>
+  <%= @conference_room.vtc %>
+</p>
+
+<p>
+  <b>Whiteboard:</b>
+  <%= @conference_room.whiteboard %>
+</p>
+
+
+<%= link_to 'Edit', edit_conference_room_path(@conference_room) %> |
+<%= link_to 'Back', conference_rooms_path %>

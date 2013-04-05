@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  building_id: 1
+  name: MyString
+  room: 1
+  floor: 1
+  phone: MyString
+  max: 1
+  tv: false
+  vtc: false
+  whiteboard: false
+
+two:
+  building_id: 1
+  name: MyString
+  room: 1
+  floor: 1
+  phone: MyString
+  max: 1
+  tv: false
+  vtc: false
+  whiteboard: false

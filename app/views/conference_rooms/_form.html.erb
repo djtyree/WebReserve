@@ -1,0 +1,53 @@
+<%= form_for(@conference_room) do |f| %>
+  <% if @conference_room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@conference_room.errors.count, "error") %> prohibited this conference_room from being saved:</h2>
+
+      <ul>
+      <% @conference_room.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :building_id %><br />
+    <%= f.number_field :building_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :room %><br />
+    <%= f.number_field :room %>
+  </div>
+  <div class="field">
+    <%= f.label :floor %><br />
+    <%= f.number_field :floor %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :max %><br />
+    <%= f.number_field :max %>
+  </div>
+  <div class="field">
+    <%= f.label :tv %><br />
+    <%= f.check_box :tv %>
+  </div>
+  <div class="field">
+    <%= f.label :vtc %><br />
+    <%= f.check_box :vtc %>
+  </div>
+  <div class="field">
+    <%= f.label :whiteboard %><br />
+    <%= f.check_box :whiteboard %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
