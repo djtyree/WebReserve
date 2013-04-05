@@ -2,9 +2,6 @@ WebReserve::Application.routes.draw do
   resources :conference_rooms
 
 
-  resources :coference_rooms
-
-
   resources :buildings
 
 
